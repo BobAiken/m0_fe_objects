@@ -6,31 +6,32 @@
 // file in your Terminal.
 
 foods = {
-  apples: 23, 
-  grapes: 507, 
+  apples: 23,
+  grapes: 507,
   eggs: 48
 }
 
-// Write code that prints all of the 'keys' of the foods variable 
+// Write code that prints all of the 'keys' of the foods variable
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(foods))
 
-// Write code that prints all of the 'values' of the foods variable 
+// Write code that prints all of the 'values' of the foods variable
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(foods))
 
-// Write code that prints the value of the second food of the foods variable 
+// Write code that prints the value of the second food of the foods variable
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(foods)[1])
 
-// Write code that adds a food to the foods object. 
+// Write code that adds a food to the foods object.
 // Then, print the updated object:
-// YOUR CODE HERE
+foods.hams = 69
+console.log(Object.keys(foods)[3])
 
 
-#-------------------
+//#-------------------
 // Part 2: Email
-#-------------------
+//#-------------------
 
 
 // Think about all the pieces of information associated with one single email in your inbox.
@@ -38,22 +39,28 @@ foods = {
 
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
-
+var email1 = {
+  sender: "bobo",
+  recipient: "joe mama",
+  subject: "turing school",
+  dateSent: "03/18/2022",
+  text: "You have been accepted!"
+}
 // Write code that logs your email object to the terminal.
+console.log(email1)
 
-
-// Write code that logs all of the 'keys' of the email object 
+// Write code that logs all of the 'keys' of the email object
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(email1))
 
-// Write code that logs all of the 'values' of the email object 
+// Write code that logs all of the 'values' of the email object
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(email1))
 
 
-#-------------------
+//#-------------------
 // Part 3: Many Emails - CHALLENGE!
-#-------------------
+//#-------------------
 
 // LONG EXAMPLE:
 // Now that we've learned about Objects AND Arrays, we can combine them.
@@ -76,7 +83,7 @@ posts = [
     timestamp: "4:37 PM August 13, 2019",
     number_likes: 0,
     comments: []
-  }, 
+  },
   {
     imageSrc: "./images/holiday-party.png",
     caption: "What a great holiday party omg",
@@ -90,12 +97,40 @@ console.log(posts);
 console.log(posts[0]);
 
 
-// The code snippet above shows an Array with 2 elements. Each element in the Array is a 
-// Objects. Each of those Objects has 4 key-value pairs. This may LOOK 
+// The code snippet above shows an Array with 2 elements. Each element in the Array is a
+// Objects. Each of those Objects has 4 key-value pairs. This may LOOK
 // a bit daunting - it's OK! You don't need to be 100% comfortable with this, but it's
 // good to have some exposure before going into Mod 1.
 
 
-// YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
+// YOU DO: Create an array of at least 3 EMAIL Objects, using the same
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+ var emails = ["email2", "email3", "email4"]
+
+ emails = [
+   {
+     sender: "Chuck",
+     recipient: "Sarah",
+     subject: "meeting",
+     dateSent: "03/21/2022",
+     text: "Hop on zoom for a meeting"
+   },
+   {
+     sender: "Steve",
+     recipient: "Karen",
+     subject: "update",
+     dateSent: "03/20/2022",
+     text: "We will be changing the location"
+   },
+   {
+     sender: "Bill",
+     recipient: "Greg",
+     subject: "none",
+     dateSent: "03/19/2022",
+     text: "Hi :)"
+   },
+ ]
+
+ console.log(emails)
